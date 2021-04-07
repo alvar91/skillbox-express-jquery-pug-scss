@@ -1,0 +1,20 @@
+section.popup.js-form-call
+    .popup__content.js-content-call
+        h2.popup__title
+            | Заказать звонок
+        button(type="button" class="popup__button-close js-form-close-call")
+        p.popup__text
+            | Заполните форму ниже и я свяжусь с вами в ближайшее время!
+        form(class="form" id="consultation-form" action="#")
+            label.form__group
+                i(class="fa fa--user")
+                input(class="input" name="name" type="text" placeholder="Ваше имя" required minlength=2)
+            label.form__group
+                i(class="fa fa--phone")
+                input(class="input" name="phone" placeholder="Ваш номер телефона" type="tel" required)
+            label.form__check
+                    input(name="checkbox" type="checkbox")
+                    span
+                        | Подтверждаю согласие на обработку своих персональных данных            
+            button(class="button button--red" type="submit")
+                | Заказать звонок
