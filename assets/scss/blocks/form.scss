@@ -1,0 +1,90 @@
+.form {
+  width: 100%;
+  text-align: center;
+
+  &__group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+}
+
+.input {
+  flex-basis: 90%;
+  background: $color-light;
+  border: 1px solid $color-orange;
+  box-sizing: border-box;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 15px;
+
+  &:focus,
+  &:active {
+    border-color: #0f8fee;
+    outline: none;
+    position: relative;
+    z-index: 1;
+  }
+
+  &::placeholder {
+    color: #aeb5b9;
+    font: normal 14px/143% Arial;
+  }
+}
+
+
+label.error {
+  padding: 10px;
+  color: $btn-white-border;
+  border: none;
+}
+
+.form__check {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 10px;
+  user-select: none;
+  text-align: left;
+
+  & input {
+    opacity: 0;
+  }
+
+  & span {
+    color: $font-grey;
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    padding-left: 30px;
+  }
+
+  & input:checked ~ span::after {
+    opacity: 1;
+    transition: opacity 0.3s;
+  }
+
+  & span::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    background-color: $color-light;
+    border: 1px solid $btn-white-border;
+    border-radius: 4px;
+  }
+
+  & span::after {
+    content: "\2714";
+    position: absolute;
+    left: 4px;
+    top: 1px;
+    width: 20px;
+    height: 20px;
+    color: $btn-white-border;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+}

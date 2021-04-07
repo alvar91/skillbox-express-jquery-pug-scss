@@ -1,0 +1,43 @@
+.central-container {
+  margin: 0 6.25% 0;
+  width: 87.5%;
+
+  @media (max-width: 1023px) and (min-width: 950px) {
+    margin: 0 3.91% 0;
+    width: 95%;
+
+    &--modified {
+      margin: 0;
+      width: 100%;
+    }
+  }
+
+  @media (min-width: 1370px) {
+    width: 1170px;
+    margin: 0 auto;
+  }
+  
+  &--slider {
+    @media (min-width: 1370px) {
+      width: 1190px;
+      margin: 0 auto;
+    }
+  }
+}
+
+.fixed-container {
+  @media (min-width: 600px) and (max-width: 1023px) {
+    max-width: 95%;
+    margin: 0px auto;
+  }
+
+  @media (min-width: 1024px) and (max-width: 1330px) {
+    max-width: 95%;
+    margin: 0px auto;
+  }
+
+  @media (min-width: 1330px) {
+    max-width: 1200px;
+    margin: 0px auto;
+  }
+}

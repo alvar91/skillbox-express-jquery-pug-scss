@@ -1,0 +1,8 @@
+@mixin list-reset(){
+  list-style: none;
+}
+
+@mixin font($font-size, $font-weight){
+  font-size: $font-size;
+  font-weight: $font-weight;
+}

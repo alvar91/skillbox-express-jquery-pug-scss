@@ -1,0 +1,23 @@
+include ./mixins.pug
+
+header.header
+    nav.fixed-container.header-menu
+        button.header-menu__button-burger-menu#burger-menu
+            span.button-burger-menu__first-line
+            span.button-burger-menu__second-line
+            span.button-burger-menu__third-line
+        ul.header-menu__list
+            li.header-list
+                a(class="header-list__link" href="#services")
+                    | Услуги
+            li.header-list
+                a(class="header-list__link" href="#portfolio")
+                    | Портфолио
+            li.header-list
+                a(class="header-list__link" href="#price")
+                    | Стоимость
+
+        button.header-menu__button-call.button.button--header.js-popup-call
+            | Заказать звонок
+        a(href="tel:+79997813689" class="header-menu__link_tel")
+            | +7 (999) 781-36-89

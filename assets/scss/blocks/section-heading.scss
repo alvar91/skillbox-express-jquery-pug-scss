@@ -1,0 +1,21 @@
+.section-heading {
+  @include font(30px, 900);
+  text-align: center;
+  color: $font-1;
+}
+
+@media (max-width: 1329px) and (min-width: 950px) {
+  .section-heading {
+    @include font(54px, 700);
+    text-align: center;
+    color: $font-1;
+  }
+}
+
+@media (min-width: 1330px) {
+  .section-heading {
+    @include font(54px, 700);
+    text-align: center;
+    color: $font-1;
+  }
+}

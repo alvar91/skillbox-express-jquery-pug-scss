@@ -1,0 +1,40 @@
+.copyright {
+  padding: 20px 20px 16.5px;
+  // width: 100%;
+  color: #ffffff;
+  background-color: #31293c;
+}
+
+.copyright__text {
+  margin: 0;
+  @include font(12px, 400);
+  text-align: center;
+}
+
+@media (max-width: 1023px) and (min-width: 950px) {
+  .copyright {
+    padding: 30px 42px 33px;
+  }
+
+  .copyright__text {
+    margin: 0;
+    @include font(16px, 400);
+  }
+}
+
+@media (max-width: 1023px) and (min-width: 950px) {
+  .copyright {
+    padding: 28px 360px 34.6px;
+  }
+}
+
+@media (min-width: 1370px) {
+  .copyright {
+    padding: 28px 360px 34.6px;
+  }
+
+  .copyright__text {
+    margin: 0;
+    @include font(16px, 400);
+  }
+}

@@ -1,0 +1,36 @@
+extends ../main.layout.pug
+
+block title 
+    title Дмитрий Алексеев Frontend-разработчик и веб-верстальщик
+
+block metatags
+    meta(http-equiv="Content-Type" content="text/html; charset=utf-8")
+    meta(name="viewport" content="width=device-width")
+    meta(http-equiv="Content-Security-Policy" content="upgrade-insecure-requests")
+    
+block links
+    link(rel="apple-touch-icon" sizes="180x180" href="/static/images/apple-touch-icon.png")
+    link(rel="icon" type="image/png" sizes="32x32" href="/static/images/favicon-32x32.png")
+    link(rel="icon" type="image/png" sizes="16x16" href="/static/images/favicon-16x16.png")
+    link(rel="stylesheet" href="/static/styles.css")
+
+block content
+    include ../includes/header.pug
+    main
+        include ../includes/about.pug
+        include ../includes/services.pug
+        include ../includes/portfolio.pug
+        include ../includes/price.pug
+    include ../includes/footer.pug
+
+block popup
+    include ../includes/popup-call.pug
+    include ../includes/popup.pug
+    include ../includes/popup-thanks.pug
+
+block scripts        
+    script(src="/static/jquery-3.3.1.min.js")
+    script(src="/static/slick.min.js")
+    script(src="/static/jquery.validate.min.js")
+    script(src="/static/jquery.maskedinput.js")
+    script(src="/static/main.js")

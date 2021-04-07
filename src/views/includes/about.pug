@@ -1,0 +1,24 @@
+section.about
+        div(class="flat-elements" aria-hidden="true")
+            span.flat-elements__element.flat-elements__element--first
+                | {&nbsp;}
+            span.flat-elements__element.flat-elements__element--second
+                | #
+            span.flat-elements__element.flat-elements__element--third
+                | &lt;/&gt;
+            span.flat-elements__element.flat-elements__element--fourth
+                | &lt;div&gt;
+            span.flat-elements__element.flat-elements__element--fifth
+                | &lt;div&gt;
+        div(class="about__content fixed-container")
+            h1.about__text.title
+                | Дмитрий Алексеев
+            span.about__description-title
+                | Frontend-разработчик и веб-верстальщик
+            a(href="#services" class="about__button")
+                | Узнать больше
+        div.about__background
+            +balloon()
+            picture.background__picture
+                source(srcset="./static/images/shutterstock_574398823.png 1x" media="(min-width: 600px)")
+                img(class="background__img" src="./static/images/shutterstock_574398823-m.png" srcset="./static/images/shutterstock_574398823-m.png 2x" alt="person")

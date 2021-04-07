@@ -1,0 +1,139 @@
+.decorative {
+  color: transparent;
+  text-align: left;
+  background-clip: text;
+
+  &--gradient {
+    background-image: linear-gradient(to top, #f26522, #fa0891 99%);
+  }
+
+  &--white {
+    background-color: #ffffff;
+  }
+}
+
+.decorative__brace {
+  width: 23px;
+  height: 24px;
+  @include font(24px, 700);
+  line-height: 0.91;
+}
+
+.decorative__hash {
+  width: 18px;
+  height: 22px;
+  @include font(27.5px, 700);
+  line-height: 0.91;
+}
+
+.decorative__tag-1 {
+  width: 26px;
+  height: 16px;
+  @include font(18px, 700);
+  line-height: 0.91;
+}
+
+.decorative__div-1 {
+  width: 35px;
+  height: 16px;
+  @include font(15px, 700);
+  line-height: 0.9;
+}
+
+@media (max-width: 1023px) and (min-width: 950px) {
+  .decorative__brace {
+    width: 45px;
+    height: 50px;
+    @include font(49px, 700);
+    line-height: 0.9;
+  }
+
+  .decorative__hash {
+    width: 35px;
+    height: 46px;
+    @include font(57px, 700);
+    line-height: 0.9;
+  }
+
+  .decorative__tag-1 {
+    width: 56px;
+    height: 35px;
+    @include font(41px, 700);
+  }
+
+  .decorative__tag-2 {
+    width: 62px;
+    height: 38px;
+    @include font(47px, 700);
+    line-height: 0.9;
+  }
+
+  .decorative__div-1 {
+    width: 86px;
+    height: 39px;
+    @include font(37px, 700);
+  }
+
+  .decorative__div-2 {
+    width: 72px;
+    height: 26px;
+    @include font(30px, 700);
+    line-height: 0.9;
+  }
+
+  .decorative__brace-2 {
+    width: 35px;
+    height: 33px;
+    @include font(34px, 700);
+    line-height: 0.91;
+  }
+
+  .decorative__tag-3 {
+    width: 54px;
+    height: 36px;
+    @include font(40px, 700);
+    line-height: 0.91;
+  }
+
+  .decorative__div-3 {
+    width: 60px;
+    height: 26px;
+    @include font(26px, 700);
+    line-height: 0.89;
+  }
+}
+
+@media (min-width: 1330px) {
+  .decorative__brace-2 {
+    width: 47px;
+    height: 50px;
+    @include font(51px, 700);
+    line-height: 0.9;
+  }
+
+  .decorative__tag-3 {
+    width: 60px;
+    @include font(43px, 700);
+  }
+
+  .decorative__div-3 {
+    width: 91px;
+    height: 39px;
+    @include font(39px, 700);
+    line-height: 0.9;
+  }
+
+  .decorative__brace-3 {
+    width: 48px;
+    height: 51px;
+    @include font(50px, 700);
+    line-height: 0.91;
+  }
+
+  .decorative__hash-2 {
+    width: 35px;
+    height: 46px;
+    @include font(56px, 700);
+    line-height: 0.9;
+  }
+}

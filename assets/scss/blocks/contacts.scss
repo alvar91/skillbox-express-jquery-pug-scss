@@ -1,0 +1,39 @@
+.contacts__item {
+  display: block;
+  @include font(20px, 500);
+  color: $font-grey;
+
+  &:first-child {
+    margin-bottom: 23px;
+  }
+}
+
+@media (max-width: 1023px) and (min-width: 950px) {
+  .contacts__item {
+    @include font(25px, 500);
+    color: #000000;
+
+    &:first-child {
+      margin-bottom: 32px;
+    }
+  }
+}
+
+@media (max-width: 1023px) and (min-width: 950px) {
+  .contacts__item {
+    &:first-child {
+      margin-bottom: 31px;
+    }
+  }
+}
+
+@media (min-width: 1330px) {
+  .contacts__item {
+    @include font(25px, 500);
+    color: #000000;
+
+    &:first-child {
+      margin-bottom: 32px;
+    }
+  }
+}

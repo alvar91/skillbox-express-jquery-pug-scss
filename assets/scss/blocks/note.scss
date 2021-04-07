@@ -1,0 +1,56 @@
+.note {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.note__text {
+  margin: 0;
+  @include font(15px, 400);
+  line-height: 30px;
+
+  &::before {
+    content: "*";
+    margin: 0 3px 0 0;
+    @include font(20px, 400);
+    line-height: 30px;
+  }
+}
+
+.note__br {
+  display: none;
+}
+
+@media (max-width: 1023px) and (min-width: 950px) {
+  .note__text {
+    @include font(18px, 400);
+  }
+
+  .note__br {
+    display: block;
+  }
+}
+
+@media (max-width: 1023px) and (min-width: 950px) {
+  .note__symbol {
+    margin: 0 5px 0 0;
+  }
+}
+
+@media (min-width: 1330px) {
+  .note {
+    margin: 0 115px;
+  }
+    .note__text {
+      @include font(18px, 400);
+    }
+
+    .note__br {
+      display: block;
+    }
+
+    .note__symbol {
+      margin: 0 5px 0 0;
+    }
+}

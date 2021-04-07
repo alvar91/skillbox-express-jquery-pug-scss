@@ -1,0 +1,34 @@
+.portfolio {
+  margin-bottom: 51px;
+}
+
+.portfolio__title {
+  margin: 0 auto 42px;
+}
+
+@media (min-width: 600px) {
+  .portfolio__button {
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+@media (max-width: 1023px) and (min-width: 950px) {
+  .portfolio {
+    margin-bottom: 101px;
+  }
+
+  .portfolio__title {
+    margin: 0 auto 86px;
+  }
+}
+
+@media (min-width: 1370px) {
+  .portfolio {
+    margin-bottom: 100px;
+  }
+
+  .portfolio__title {
+    margin: 0 auto 103px;
+  }
+}
